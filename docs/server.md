@@ -4,6 +4,10 @@
 - [Getting Started on Linux](./setup/linux-setup.md)
 - [Getting Started on Mac OS](./setup/macos-setup.md)
 
+# Reactive Trader Cloud - Server node components (Price History and Nlp)
+
+- [Getting Started](./server-node.md)
+
 ## Overview
 
 The server is made up of separate distributed services. They communicate with the client via a broker and can each be run in its own Docker container.
