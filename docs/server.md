@@ -4,10 +4,6 @@
 - [Getting Started on Linux](./setup/linux-setup.md)
 - [Getting Started on Mac OS](./setup/macos-setup.md)
 
-# Reactive Trader Cloud - Server node components (Price History and Nlp)
-
-- [Getting Started](./server-node.md)
-
 ## Overview
 
 The server is made up of separate distributed services. They communicate with the client via a broker and can each be run in its own Docker container.
@@ -19,3 +15,12 @@ The cross-platform capability opens the door to a wide range of deployment tools
 An event sourcing approach is used for persistence, with [Event Store](https://geteventstore.com/) as the backing implementation. This provides many advantages, including data resiliency and facilitates re-hydration of state.
 
 Multiple instances of each service run concurrently for fail-over purposes. Each service instance broadcasts heartbeats, and the client is able to switch to a different instance if the connected instance is no longer reachable. Using this mechanism, load balancing strategies can also be implemented.
+
+## Server node components
+
+Some services are using node.js and can be started independently with [Node](./server-node.md).
+
+- Price History
+- Nlp
+- Bot
+- Openfin Config

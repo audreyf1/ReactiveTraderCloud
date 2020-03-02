@@ -1,6 +1,6 @@
 ## Run the node components (priceHistory and nlp)
 
-Go to the directory of the component you want to run and open a terminal or bash:
+Run the following commands from the `/src/server/node/xxx` directory, xxx being the server component you want to run:
 
 ```sh
 npm install  # Install Node modules listed in ./package.json
