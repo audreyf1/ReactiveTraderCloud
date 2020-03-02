@@ -16,7 +16,7 @@ An event sourcing approach is used for persistence, with [Event Store](https://g
 
 Multiple instances of each service run concurrently for fail-over purposes. Each service instance broadcasts heartbeats, and the client is able to switch to a different instance if the connected instance is no longer reachable. Using this mechanism, load balancing strategies can also be implemented.
 
-## Server node components
+## Node server components
 
 Some services are using node.js and can be started independently with [Node](./server-node.md).
 
